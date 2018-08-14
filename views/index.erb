@@ -12,7 +12,7 @@
 
 <% comments = ["Your pictures are so cute", "LOve the dog!!", "Miss you!"]%>
 <ol>
-  <li> Your pictures are so cute</li>
-  <li>Love the dog!</li>
-  <li>Miss you!</li>
+  % commments.each do |comment| %>
+  <li><%= comment %></li>
+  <% end %>
 </ol>
